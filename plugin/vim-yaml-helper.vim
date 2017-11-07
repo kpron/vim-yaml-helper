@@ -157,7 +157,7 @@ function! s:MakeIndentRegex(matchSizes, indent, ...)
   if a:0 > 0
     let text = a:1 .":"
   else
-    let text = "\\a[^ ]"
+    let text = "\\p[^ ]"
   endif
 
   if a:matchSizes == "smaller"
